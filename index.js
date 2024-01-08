@@ -4,7 +4,7 @@ let string = '';
 let arr = Array.from(buttons);
 arr.forEach((buttons) => {
   buttons.addEventListener('click', (e) => {
-    if (e.target.innerHTML == '=') {
+    if (e.target.textContent == '=') {
       string = eval(string);
       input.value = string;
     } else if (e.target.textContent == 'AC') {
